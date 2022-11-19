@@ -1,0 +1,105 @@
+.lawyer--details {
+    height: 100vh;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.lawyer--container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+
+.lawyer--container_info {
+    background-color: var(--color-golden);
+    font-family: var(--font-base);
+    font-weight: 600;
+    width: 100%;
+}
+
+.lawyer--details_img {
+    padding-top: 1rem;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.lawyer--details_row h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.lawyer--details_row p {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-base);
+    padding: 2rem 4rem;
+}
+
+.calendar p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-golden);
+    font-weight: bold;
+}
+
+.btn-calendar {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.btn-calendar button {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--color-golden);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.lawyer--details_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.lawyer--details_btn button {
+    background-color: #c4964b;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .container.lawyer--container {
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .lawyer--details {
+        height: 100%;
+    }
+    .lawyer--container_info {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn-calendar {
+        flex-wrap: wrap;
+    }
+}

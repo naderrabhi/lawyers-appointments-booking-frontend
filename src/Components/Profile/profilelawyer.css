@@ -1,0 +1,94 @@
+.profile--lawyer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+}
+
+.profile--lawyer_container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.profile--lawyer_img {
+    background-color: var(--color-golden);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile--lawyer_img img{
+    padding-top: 1rem;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.profile--lawyer_img button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--color-white);
+    font-family: var(--font-base);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.profile--lawyer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-head h5,
+.profile-head h6 {
+    font-size: 1.8rem;
+    font-family: var(--font-base);
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+.lawyer--action {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lawyer--action button {
+    border: none;
+    background: var(--color-golden);
+    color: var(--color-white);
+}
+
+.no--client {
+    color: var(--color-golden);
+    font-family: var(--font-base);
+}
+
+@media screen and (max-width: 1050px) {
+    .profile--lawyer {
+        height: 100%;
+    }
+    .profile--lawyer_container {
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .profile--lawyer_img {
+        border-radius: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .profile-head {
+        margin-bottom: 3rem;
+    }
+}

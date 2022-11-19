@@ -1,0 +1,79 @@
+.sign {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign--content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign--row {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign--form_sign {
+    width: 50%;
+    padding: 2rem;
+    background: rgb(39,10,4,0.2);
+    border-radius: 3%;
+}
+
+.sign--form_sign h3 {
+    font-size: 2.5rem;
+    font-family: var(--font-base);
+    text-align: center;
+    color: #F6F7EB;
+    margin-bottom: 3rem;
+}
+
+.sign--in_signup {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.sign--in_signup a {
+    font-size: 1.2rem;
+    color: var(--color-white);
+    font-family: var(--font-base);
+    margin-left: 2rem;
+}
+
+.sign--form_sign button {
+    background-color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 1.2rem;
+    color: var(--color-black);
+    border: none;
+    padding: 0.3rem;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1050px){
+    .sign--form_sign {
+        width: 100%;
+    }
+    .sign--row {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .sign--form_sign h3 {
+        font-size: 1.8rem;
+    }
+}

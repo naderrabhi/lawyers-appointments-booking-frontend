@@ -1,0 +1,132 @@
+.footer {
+    height: 100%;
+    position: relative;
+    background-color: var(--color-black);
+}
+
+.footer--header p {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-family: var(--font-base);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.footer--body {
+    width: 100%;
+    height: 50vh;
+    margin-top: 5rem;
+    margin-left: 0;
+    padding: 4rem;
+}
+
+.footer--body_row {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--color-white);
+}
+
+.footer--body_col h3 {
+    font-family: var(--font-base);
+    font-size: 1.4rem;
+}
+
+.footer--body_col p {
+    font-family: var(--font-base);
+    font-size: 1.1rem;
+}
+
+.footer--body_row svg {
+    margin-bottom: 1.2rem;
+    color: var(--color-golden);
+    font-size: 1.5rem;
+}
+
+.footer--icons {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footer--icons a {
+    font-size: 2.2rem;
+    color: var(--color-golden);
+    margin-right: 0.5rem;
+}
+
+
+.footer--icons svg:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.footer--copyright {
+    /* height: 8vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.footer--copyright p {
+    /* margin-top: 1rem; */
+    font-size: 1.2rem;
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1350px) {
+    .footer {
+        height: 100%;
+    }
+    .footer--body {   
+        height: 50%;
+    } 
+}
+
+@media screen and (max-width: 1050px) {
+    .footer--body_row {
+        font-size: 1.2rem;
+        line-height: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer--body {
+        height: 50%;
+        padding: 2rem 4rem;
+    }
+    .footer--body_col {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer--header p {  
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .footer--body_col {
+        font-size: 0.7rem;
+        line-height: 0.5rem;
+    }
+    .footer--body {
+        height: 50%;
+        padding: 2rem 0rem;
+    }
+    .footer--icons {
+        width: 100%;
+    }
+    .footer--copyright p {
+        font-size: 0.8rem;
+    }
+}
